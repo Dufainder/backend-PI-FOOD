@@ -27,7 +27,7 @@ conn.sync({force:false}).then(() => {
       // let a = async () => await diet.findAll();
      // console.log(a);
          const dietas = ["gluten free","paleolithic", "vegetarian", "lacto ovo vegetarian","vegan","pescatarian","primal","whole 30", "fodmap friendly","dairyFree"];
-         dietas.forEach(async (element) => await Diet.findOrCreate({name: element}));
+         dietas.forEach(async (element) => await Diet.create({name: element}));
       
     console.log('Tipos de dieta pre-cargadas')
 
